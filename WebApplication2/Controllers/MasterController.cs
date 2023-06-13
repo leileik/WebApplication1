@@ -15,9 +15,9 @@ namespace WebApplication2.Controllers
         }
 
         [HttpPost]
-        public void Position(MasterMsg masterMsg)
+        public void Position(MasterPosition masterPosition)
         {
-            Console.WriteLine(masterMsg.MapName);
+            Basic.masterPosition= masterPosition;
             return ;
         }
     }
